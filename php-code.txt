@@ -1,0 +1,53 @@
+
+<?php
+  // String variables
+  $first_name = "John";
+  $last_name = "Doe";
+
+  // Concatenation
+  $full_name = $first_name . " " . $last_name;
+  echo "Full name: " . $full_name . "\n";
+
+  // String length
+  $length = strlen($full_name);
+  echo "Length: " . $length . "\n";
+
+  // Uppercase and lowercase
+  $upper = strtoupper($full_name);
+  $lower = strtolower($full_name);
+  echo "Uppercase: " . $upper . "\n";
+  echo "Lowercase: " . $lower . "\n";
+
+  // Substring
+  $substring = substr($full_name, 0, 4);
+  echo "Substring: " . $substring . "\n";
+
+  // Replace
+  $replaced = str_replace("John", "Jane", $full_name);
+  echo "Replaced: " . $replaced . "\n";
+
+  // Split
+  $words = explode(" ", $full_name);
+  print_r($words);
+
+  // Trim
+  $trimmed = trim("   " . $full_name . "   ");
+  echo "Trimmed: '" . $trimmed . "'\n";
+?>
+
+ 
+Output:
+
+
+Full name: John Doe
+Length: 8
+Uppercase: JOHN DOE
+Lowercase: john doe
+Substring: John
+Replaced: Jane Doe
+Array
+(
+    [0] => John
+    [1] => Doe
+)
+Trimmed: 'John Doe'
